@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">HNDAlvaroGomez</string>
+    <string name="nombre">Nombre</string>
+    <string name="password">Contraseña</string>
+    <string name="entrar">Entrar</string>
+    <string name="registro">Registrarse</string>
+    <string name="usuario">Nombre de usuario</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="correo">Correo electronico</string>
+</resources>
