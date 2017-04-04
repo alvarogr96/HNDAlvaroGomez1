@@ -37,6 +37,7 @@ public class AjustesFragment extends Fragment {
         txtContacto.setText( getString(R.string.contacto) + " alvaro_gomez_apps1m1617@cev.com " );
         txtInfDes.setText( getString(R.string.infDes)+" Estudiante en el centro CEV ");
 
+
         return view;
     }
 
