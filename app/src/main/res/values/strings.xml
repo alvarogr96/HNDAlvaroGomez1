@@ -7,4 +7,28 @@
     <string name="usuario">Nombre de usuario</string>
     <string name="apellidos">Apellidos</string>
     <string name="correo">Correo electronico</string>
+    <string name="naves">Naves</string>
+    <string name="objetos">Objetos</string>
+    <string name="tips">Tips</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="perfil">Perfil</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="ajustes">Ajustes</string>
+    <string name="salir">Salir</string>
+
+    <string name="datosIncorrectos">Datos introducidos incorrectos</string>
+    <string name="datosExistentes">No existe el usuario introducido</string>
+    <string name="datosObligatorios">Datos obligatorios</string>
+
+    <string name="version">Version: </string>
+    <string name="contacto">Contacto: </string>
+    <string name="infDes"> Informacion del desarrollador: </string>
+
+
+
+    <string name="registroCorrecto">Te has registrado correctamente </string>
+    <string name="mailInc">Foramato de email incorrecto </string>
+    <string name="campos">Debes rellenar todos los campos</string>
 </resources>

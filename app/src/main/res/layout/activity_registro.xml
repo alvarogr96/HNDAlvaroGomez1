@@ -28,12 +28,14 @@
     <EditText android:id="@+id/editContraseña"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/password"/>
+        android:hint="@string/password"
+        android:inputType="textPassword"/>
 
     <EditText android:id="@+id/editCorreo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/correo"/>
+        android:hint="@string/correo"
+        android:inputType="textEmailAddress"/>
 
     <Button android:id="@+id/btnRegistro"
         android:layout_width="match_parent"

@@ -7,8 +7,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.alumnos.hndalvarogomez.R;
+import com.example.alumnos.hndalvarogomez.beans.UsuarioBean;
+import com.example.alumnos.hndalvarogomez.preferences.Preferencias;
+import com.example.alumnos.hndalvarogomez.utils.Utils;
 
 public class RegistroActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -32,7 +36,38 @@ public class RegistroActivity extends AppCompatActivity implements View.OnClickL
 
     @Override
     public void onClick(View view) {
-        Intent intent = new Intent(RegistroActivity.this, LoginActivity.class);
-        startActivity(intent);
+        String nombre = editNombre.getText().toString();
+        String apellidos = editApellidos.getText().toString();
+        String usuario = editUsuario.getText().toString();
+        String pass = editContraseña.getText().toString();
+        String correo = editCorreo.getText().toString();
+
+        if( nombre!=null && apellidos!=null &&usuario!=null && pass!=null && correo!=null &&
+               !nombre.isEmpty() && !apellidos.isEmpty()&& !usuario.isEmpty() && !pass.isEmpty() && !correo.isEmpty()) {
+            //email formato correcto, pass y pass2 iguales
+
+            if(Utils.isEmail(correo)) {
+
+
+                UsuarioBean usuarioBean = new UsuarioBean(nombre, apellidos, usuario, pass, correo);
+                Preferencias prefs = new Preferencias(RegistroActivity.this);
+                prefs.setUsuario(usuarioBean);
+                Toast.makeText(RegistroActivity.this,
+                        getString(R.string.registroCorrecto),
+                        Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(RegistroActivity.this, LoginActivity.class);
+                startActivity(intent);
+                finish();
+            }else{
+                Toast.makeText(RegistroActivity.this,
+                        getString(R.string.mailInc),
+                        Toast.LENGTH_SHORT).show();
+            }
+        }else {
+            Toast.makeText(RegistroActivity.this,
+                    getString(R.string.campos),
+                    Toast.LENGTH_SHORT).show();
+        }
     }
 }

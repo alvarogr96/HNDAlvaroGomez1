@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alumnos.hndalvarogomez.fragments.PerfilFragment"
+    android:orientation="vertical">
+
+
+    <TextView android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:textSize="20dp" />
+    <TextView android:id="@+id/apellidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp" />
+    <TextView android:id="@+id/nombreUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp" />
+    <TextView android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"/>
+
+
+</LinearLayout>

@@ -9,9 +9,22 @@ import java.io.Serializable;
  */
 
 public class TipsBean implements Serializable {
-    public String descripcion;
+    public String titulo, descripcion;
 
     public TipsBean() {
+    }
+
+    public TipsBean(String titulo, String descripcion) {
+        this.titulo = titulo;
+        this.descripcion = descripcion;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 
     public String getDescripcion() {
@@ -30,9 +43,9 @@ public class TipsBean implements Serializable {
     public static Object fromJson(String json){
         Gson gson = new Gson();
 
-        ObjetoBean objetoBean = gson.fromJson(json, ObjetoBean.class);
+       TipsBean tipsBean = gson.fromJson(json, TipsBean.class);
 
-        return objetoBean;
+        return tipsBean;
 
 
     }

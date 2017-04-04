@@ -14,6 +14,14 @@ public class UsuarioBean implements Serializable{
     public UsuarioBean() {
     }
 
+    public UsuarioBean(String nombre, String apellidos, String usuario, String password, String correo) {
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.usuario = usuario;
+        this.password = password;
+        this.correo = correo;
+    }
+
     public String getNombre() {
         return nombre;
     }
